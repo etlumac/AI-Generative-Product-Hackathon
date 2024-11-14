@@ -11,16 +11,6 @@
 - Тонкая настройка модели для специфических запросов бренда.
 - Создание концепций для генерации уникальных визуальных образов.
 - Запуск веб-интерфейса для генерации и визуализации изображений.
-
----
-
-## **Содержание**
-
-- [Требования](#требования)
-- [Установка](#установка)
-- [Запуск](#запуск)
-- [Поддержка](#поддержка)
-
 ---
 
 ### **Требования** <a name="требования"></a>
@@ -31,4 +21,19 @@
 1. **train_dreambooth.py** - для тренировки модели Dreambooth:
    ```bash
    wget -q https://github.com/ShivamShrirao/diffusers/raw/main/examples/dreambooth/train_dreambooth.py
+
+2. **convert_diffusers_to_original_stable_diffusion.py** - для конвертации весов:
+   ```bash
+   wget -q https://github.com/ShivamShrirao/diffusers/raw/main/scripts/convert_diffusers_to_original_stable_diffusion.py
+   
+3. **concepts_list.json** - файл, содержащий список концепций для обучения. Пример:
+   ```bash
+   [
+  {
+    "instance_prompt": "a print of a lion",
+    "class_prompt": "wild animal print",
+    "instance_data_dir": "/path/to/your/data"
+  }
+]
+
 
